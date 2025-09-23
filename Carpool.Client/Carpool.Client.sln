@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carpool.Client", "Carpool.Client\Carpool.Client.csproj", "{F2A1E9EC-CF1F-4365-B2A1-A33043C27FBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2A1E9EC-CF1F-4365-B2A1-A33043C27FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2A1E9EC-CF1F-4365-B2A1-A33043C27FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2A1E9EC-CF1F-4365-B2A1-A33043C27FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2A1E9EC-CF1F-4365-B2A1-A33043C27FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A08268C-22DD-413A-9850-9748CC610405}
+	EndGlobalSection
+EndGlobal
