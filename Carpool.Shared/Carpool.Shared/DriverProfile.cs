@@ -20,10 +20,13 @@ namespace Carpool.Shared
 
     public class TimeSlot
     {
-        public string Wochentag { get; set; } // Montag, Dienstag …
-        public TimeSpan Start { get; set; }
-        public TimeSpan Ende { get; set; }
-        public bool Hinreise { get; set; } // true = hin, false = heim
+        public int Id { get; set; }       // <- EF Core Primary Key
+        public DayOfWeek Wochentag { get; set; }
+        public TimeSpan Startzeit { get; set; }
+        public TimeSpan Endzeit { get; set; }
+        public bool Hinreise { get; set; }
+        public int DriverProfileId { get; set; }  // Fremdschlüssel
+        public DriverProfile DriverProfile { get; set; }
     }
 }
 
