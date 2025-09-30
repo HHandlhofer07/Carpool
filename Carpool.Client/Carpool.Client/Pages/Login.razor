@@ -1,0 +1,30 @@
+﻿@page "/login"
+@using Carpool.Client.Services
+@using Carpool.Shared.Models
+@inject AuthService AuthService
+
+<h3>Login</h3>
+
+<input @bind="Email" placeholder="Email" />
+<input @bind="Password" type="password" placeholder="Password" />
+<button @onclick="LoginUser">Login</button>
+
+@if (!string.IsNullOrEmpty(Message))
+{
+    <p>@Message</p>
+}
+
+@code {
+    string Email;
+    string Password;
+    string Message;
+
+    private async Task LoginUser()
+    {
+        var response = await AuthService.Login(new LoginRequest { Email = Email, Password = Password });
+        if (response.IsAuthSuccessful)
+            Message = "Login erfolgreich!";
+        else
+            Message = response.ErrorMessage;
+    }
+}

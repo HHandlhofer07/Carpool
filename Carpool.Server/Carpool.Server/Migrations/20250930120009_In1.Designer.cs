@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Carpool.Server.Migrations
 {
     [DbContext(typeof(CarpoolDbContext))]
-    [Migration("20250923143000_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250930120009_In1")]
+    partial class In1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

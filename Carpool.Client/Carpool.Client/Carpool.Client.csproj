@@ -17,4 +17,8 @@
     <PackageReference Include="MudBlazor" Version="8.12.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Carpool.Shared\Carpool.Shared\Carpool.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

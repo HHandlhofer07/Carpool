@@ -1,7 +1,13 @@
 ﻿@page "/"
+<PageTitle>Mitfahrerapp</PageTitle>
 
-<PageTitle>Home</PageTitle>
+<h1>Mitfahrerapp</h1>
+<p>Willkommen! Das ist die Startseite deiner Blazor WebAssembly App.</p>
 
-<h1>Hello, world!</h1>
+<MudButton Variant="Variant.Filled" OnClick="@(() => count++)">
+    Geklickt: @count
+</MudButton>
 
-Welcome to your new app.
+@code {
+    private int count = 0;
+}
