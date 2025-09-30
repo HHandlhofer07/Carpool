@@ -1,4 +1,5 @@
 ﻿@using MudBlazor
+@using Microsoft.AspNetCore.Components.Authorization
 
 <MudThemeProvider Theme="@MyLightTheme">
     <CascadingAuthenticationState>
@@ -19,10 +20,30 @@
     </CascadingAuthenticationState>
 </MudThemeProvider>
 
-
 @code {
     private MudTheme MyLightTheme = new MudTheme()
     {
-        
+        PaletteLight = new PaletteLight()
+        {
+            Primary = Colors.Blue.Default,
+            Secondary = Colors.Pink.Accent2,
+            Background = "#f5f5f5",          // helles Grau
+            Surface = "#ffffff",             // Weiß
+            AppbarBackground = Colors.Blue.Default,
+            AppbarText = "#ffffff",          // Weiß
+            DrawerBackground = "#eeeeee",    // Grau
+            DrawerText = "#333333"           // Dunkelgrau
+        },
+        PaletteDark = new PaletteDark()
+        {
+            Primary = Colors.Blue.Lighten2,
+            Secondary = Colors.Pink.Lighten2,
+            Background = "#121212",          // Dunkel
+            Surface = "#1e1e1e",              // Dunkel
+            AppbarBackground = "#1e1e1e",
+            AppbarText = "#ffffff",          // Weiß
+            DrawerBackground = "#1b1b1b",
+            DrawerText = "#ffffff"           // Weiß
+        }
     };
 }
